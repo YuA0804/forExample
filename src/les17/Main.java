@@ -13,6 +13,7 @@ public class Main {
             in = new FileInputStream("file_1.txt");
             out = new FileOutputStream("file_2.txt");
             int tmp;
+            int q;
             while ((tmp = in.read()) != -1) {
                 read += (char) tmp;
                 System.out.println(read);
