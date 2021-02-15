@@ -16,10 +16,10 @@ public class Main {
             while ((tmp = in.read()) != -1) {
                 read += (char) tmp;
                 System.out.println(read);
-                if (tmp != 46) {
+                if (tmp != 38) {
                     out.write(tmp);
                 }
-                if (tmp == 46 || tmp == 32) {
+                if (tmp == 58 || tmp == 29) {
                     in.skip(tmp);
                 } else {
                     out.write(tmp);
